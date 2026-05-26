@@ -133,37 +133,6 @@
             <div class="stack-version">Pages · CDN Global</div>
           </div>
         </div>
-
-        <p class="stack-subtitle">TIPOGRAFIA</p>
-        <div class="stack-grid">
-          <div class="stack-card">
-            <div class="stack-card-top">
-              <span class="stack-icon">Gg</span>
-              <span class="stack-badge badge-tool">FONTE</span>
-            </div>
-            <div class="stack-name">Cormorant Garamond</div>
-            <div class="stack-desc">Títulos e display. Serif editorial com variantes itálico e light.</div>
-            <div class="stack-version">Google Fonts · wght 300/400/600</div>
-          </div>
-          <div class="stack-card">
-            <div class="stack-card-top">
-              <span class="stack-icon">Mm</span>
-              <span class="stack-badge badge-tool">FONTE</span>
-            </div>
-            <div class="stack-name">DM Mono</div>
-            <div class="stack-desc">Labels técnicos, tags, badges e metadados.</div>
-            <div class="stack-version">Google Fonts · wght 300/400</div>
-          </div>
-          <div class="stack-card">
-            <div class="stack-card-top">
-              <span class="stack-icon">Aa</span>
-              <span class="stack-badge badge-tool">FONTE</span>
-            </div>
-            <div class="stack-name">Outfit</div>
-            <div class="stack-desc">Corpo do texto e UI geral. Sans-serif geométrica.</div>
-            <div class="stack-version">Google Fonts · wght 200/400/600</div>
-          </div>
-        </div>
       </section>
 
       <section class="doc-section" id="arquitetura">
