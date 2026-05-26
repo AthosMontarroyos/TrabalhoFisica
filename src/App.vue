@@ -1,19 +1,18 @@
 <template>
   <div>
-    <CustomCursor />
-    <StarsCanvas />
+    <WaveCanvas />
     <Navbar />
     <router-view />
   </div>
 </template>
 
 <script setup>
-import CustomCursor from './components/CustomCursor.vue'
-import StarsCanvas from './components/StarsCanvas.vue'
+import WaveCanvas from './components/WaveCanvas.vue'
 import Navbar from './components/Navbar.vue'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  document.documentElement.setAttribute('data-theme', 'noite')
+  const saved = localStorage.getItem('theme')
+  document.documentElement.setAttribute('data-theme', saved || 'escuro')
 })
 </script>

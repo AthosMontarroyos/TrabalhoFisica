@@ -4,7 +4,7 @@
     <div class="divider"></div>
     <IntroSection />
     <div class="divider"></div>
-    <CertsSection :certs="certs" @cursorBig="cursorBig = $event" />
+    <CertsSection :certs="certs" />
     <div class="divider"></div>
     <ProcessSection :steps="steps" />
     <div class="divider"></div>
@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import HeroSection from '../components/HeroSection.vue'
 import IntroSection from '../components/IntroSection.vue'
 import CertsSection from '../components/CertsSection.vue'
@@ -22,8 +21,6 @@ import ProcessSection from '../components/ProcessSection.vue'
 import TeamSection from '../components/TeamSection.vue'
 import AppFooter from '../components/AppFooter.vue'
 import { certs, steps, team } from '../data/content'
-
-const cursorBig = ref(false)
 </script>
 
 <style>
