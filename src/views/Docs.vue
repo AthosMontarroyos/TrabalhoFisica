@@ -187,10 +187,10 @@
             <tr><td>Laisa</td><td><span class="role-chip">Líder</span></td><td>Coordenação geral, revisão de conteúdo e aprovação final</td></tr>
             <tr><td>Athos</td><td><span class="role-chip">Design / Dev</span></td><td>Arquitetura front-end, design system, implementação Vue e CSS</td></tr>
             <tr><td>Johann</td><td><span class="role-chip">Suporte Design</span></td><td>Auxílio na identidade visual, assets e revisão de UI</td></tr>
-            <tr><td>Júlio</td><td><span class="role-chip">Apresentação</span></td><td>Roteiro de apresentação oral e slides de apoio</td></tr>
+            <tr><td>Júlio</td><td><span class="role-chip">Líder da Apresentação</span></td><td>Líder durante a apresentação</td></tr>
             <tr><td>Kayo</td><td><span class="role-chip">Pesquisa</span></td><td>Levantamento de normas técnicas e dados das certificações</td></tr>
             <tr><td>Eder</td><td><span class="role-chip">Pesquisa</span></td><td>Pesquisa sobre processos de qualificação e referências bibliográficas</td></tr>
-            <tr><td>Bruna</td><td><span class="role-chip">Pesquisa</span></td><td>Pesquisa complementar e curadoria de fontes acadêmicas</td></tr>
+            <tr><td>Bruna</td><td><span class="role-chip">Pesquisa</span></td><td>Pesquisas complementares</td></tr>
           </tbody>
         </table>
       </section>
