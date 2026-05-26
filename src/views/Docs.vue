@@ -16,12 +16,6 @@
       <router-link class="back-btn" to="/">← Voltar ao site</router-link>
     </aside>
 
-    <div class="doc-decoration" :data-section="activeSection">
-      <span class="dec-number">{{ activeSection }}</span>
-      <span class="dec-label">SEÇÃO</span>
-      <div class="dec-line"></div>
-    </div>
-
     <main>
       <div class="page-header">
         <p class="eyebrow">TEMA 04 · GRUPO 4 · CBM</p>
@@ -300,6 +294,12 @@
         </div>
       </section>
     </main>
+
+    <div class="doc-decoration" :data-section="activeSection">
+      <span class="dec-number">{{ activeSection }}</span>
+      <span class="dec-label">SEÇÃO</span>
+      <div class="dec-line"></div>
+    </div>
   </div>
 </template>
 
