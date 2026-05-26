@@ -143,6 +143,22 @@ Reformulação visual completa do site com redesign total da identidade visual. 
 - `src/composables/useCursor.js`
 - `src/composables/useStars.js`
 
+## Melhorias de Hover (2026-05-26)
+
+### src/components/CertsSection.vue
+- Cards ganham `translateY(-3px)`, `border-color: var(--accent)`, `box-shadow` glow no hover
+- LED indicator escala (`scale(1.3)`) e fica opaco
+- Pin marker (canto) preenche com accent
+
+### src/components/ProcessSection.vue
+- Step inteiro sobe 3px no hover
+- Step-card ganha glow box-shadow
+- CH marker brilha com `box-shadow: 0 0 12px var(--accent)`
+- Linha tracejada fica mais visível (opacity .15 → .4)
+
+### README.md (reescrito)
+- Documentação completa: visão geral, stack, estrutura, design system, funcionalidades
+
 ## Arquivos Inalterados
 - `src/data/content.js` — conteúdo preservado
 - `src/router/index.js`
