@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-columns: 220px 1fr 80px;
+  grid-template-columns: 220px 1fr 120px;
   min-height: 100vh;
 }
 @media(max-width:1024px){ .layout { grid-template-columns: 220px 1fr; } }
@@ -394,7 +394,7 @@ main {
 @media(max-width:1024px){ .doc-decoration { display: none; } }
 .dec-number {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 300;
   color: var(--rose);
   line-height: 1;
@@ -402,8 +402,8 @@ main {
 }
 .dec-label {
   font-family: 'DM Mono', monospace;
-  font-size: .5rem;
-  letter-spacing: .25em;
+  font-size: .55rem;
+  letter-spacing: .3em;
   color: var(--mauve1);
   text-transform: uppercase;
   writing-mode: vertical-rl;
