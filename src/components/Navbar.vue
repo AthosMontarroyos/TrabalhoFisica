@@ -31,10 +31,16 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { themes } from '../composables/useTheme'
 
 const currentTheme = ref(0)
+
+onMounted(() => {
+  const current = document.documentElement.getAttribute('data-theme')
+  const idx = themes.findIndex(t => t.key === current)
+  if (idx !== -1) currentTheme.value = idx
+})
 
 function nextTheme() {
   currentTheme.value = (currentTheme.value + 1) % themes.length
