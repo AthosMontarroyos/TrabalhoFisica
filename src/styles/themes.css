@@ -1,0 +1,45 @@
+:root[data-theme="noite"] {
+  --bg:         #0f1525;
+  --navy:       #242E49;
+  --mauve1:     #574963;
+  --mauve2:     #7C677A;
+  --blush:      #FFE0E6;
+  --rose:       #B18B9A;
+  --deep:       #6E546C;
+  --nav-bg:     rgba(15,21,37,.75);
+  --card-bg1:   #1c2440;
+  --card-bg2:   #16111f;
+  --stat-bg1:   #1a2038;
+  --stat-bg2:   #191224;
+  --star-color: 255,224,230;
+}
+:root[data-theme="sakura"] {
+  --bg:         #1B0C1A;
+  --navy:       #4B2138;
+  --mauve1:     #6D3C52;
+  --mauve2:     #765D67;
+  --blush:      #FADCD5;
+  --rose:       #6D3C52;
+  --deep:       #2D222F;
+  --nav-bg:     rgba(27,12,26,.80);
+  --card-bg1:   #2d1628;
+  --card-bg2:   #1b0c1a;
+  --stat-bg1:   #2a1325;
+  --stat-bg2:   #1e0d1c;
+  --star-color: 250,220,213;
+}
+:root[data-theme="cafe"] {
+  --bg:         #1a0f0a;
+  --navy:       #3E2723;
+  --mauve1:     #4E342E;
+  --mauve2:     #6D4C41;
+  --blush:      #D7CCC8;
+  --rose:       #8D6E63;
+  --deep:       #4E342E;
+  --nav-bg:     rgba(26,15,10,.80);
+  --card-bg1:   #2e1a14;
+  --card-bg2:   #1a0f0a;
+  --stat-bg1:   #2a1810;
+  --stat-bg2:   #1e1008;
+  --star-color: 215,204,200;
+}
