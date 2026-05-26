@@ -16,6 +16,12 @@
       <router-link class="back-btn" to="/">← Voltar ao site</router-link>
     </aside>
 
+    <div class="doc-decoration" :data-section="activeSection">
+      <span class="dec-number">{{ activeSection }}</span>
+      <span class="dec-label">SEÇÃO</span>
+      <div class="dec-line"></div>
+    </div>
+
     <main>
       <div class="page-header">
         <p class="eyebrow">TEMA 04 · GRUPO 4 · CBM</p>
@@ -298,7 +304,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import vueImg from '../assets/Stack/vue.png'
 import viteImg from '../assets/Stack/vite.png'
 import jsImg from '../assets/Stack/js.png'
@@ -306,6 +312,9 @@ import cssImg from '../assets/Stack/css.png'
 import htmlImg from '../assets/Stack/html.png'
 import nodeImg from '../assets/Stack/nodejs.png'
 import cloudflareImg from '../assets/Stack/cloudflare.png'
+
+const sectionMap = { visao: '01', stack: '02', arquitetura: '03', grupo: '04', fontes: '05' }
+const activeSection = ref('01')
 
 onMounted(() => {
   const sections = document.querySelectorAll('.doc-section')
@@ -316,6 +325,7 @@ onMounted(() => {
         links.forEach(l => l.classList.remove('active'))
         const active = document.querySelector(`.sidebar-link[href="#${e.target.id}"]`)
         if (active) active.classList.add('active')
+        activeSection.value = sectionMap[e.target.id] || '01'
       }
     })
   }, { threshold: .35 })
