@@ -1,11 +1,8 @@
 :root {
-  --bg:        #0b0f1a;
-  --surface:   #111827;
+  --surface:   var(--card-bg1);
+  --mauve:     var(--mauve1);
+  --dim:       var(--mauve2);
   --border:    rgba(255,255,255,.07);
-  --blush:     #FFE0E6;
-  --rose:      #B18B9A;
-  --mauve:     #574963;
-  --dim:       #7C677A;
   --green:     #6EE7B7;
   --amber:     #FCD34D;
   --blue:      #93C5FD;
@@ -25,7 +22,7 @@ aside {
   overflow-y: auto;
   border-right: 1px solid var(--border);
   padding: 2rem 1.5rem;
-  background: #0d1120;
+  background: var(--card-bg2);
   display: flex; flex-direction: column; gap: .25rem;
 }
 @media(max-width:768px){ aside { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border); } }
@@ -68,7 +65,7 @@ aside {
   transition: background .2s, color .2s;
 }
 .sidebar-link:hover, .sidebar-link.active {
-  background: rgba(255,255,255,.05);
+  background: var(--card-bg1);
   color: var(--blush);
 }
 .sidebar-link .dot {
@@ -168,14 +165,14 @@ main {
   width: 48px;
   height: 48px;
   object-fit: contain;
-  background: rgba(255,255,255,.04);
+  background: var(--card-bg2);
   border-radius: 8px;
   padding: 8px;
-  border: 1px solid rgba(255,255,255,.06);
+  border: 1px solid var(--border);
   transition: background .25s, border-color .25s;
 }
 .stack-card:hover .stack-icon-img {
-  background: rgba(255,255,255,.07);
+  background: var(--card-bg1);
   border-color: var(--rose);
 }
 .stack-name {
@@ -207,15 +204,15 @@ main {
 .role-table td {
   font-size: .88rem; color: var(--blush);
   padding: .7rem 1rem;
-  border-bottom: 1px solid rgba(255,255,255,.03);
+  border-bottom: 1px solid var(--border);
 }
-.role-table tr:hover td { background: rgba(255,255,255,.02); }
+.role-table tr:hover td { background: var(--card-bg1); }
 .role-chip {
   font-family: 'DM Mono', monospace;
   font-size: .6rem; letter-spacing: .1em;
   padding: .15rem .5rem; border-radius: 3px;
   border: 1px solid var(--mauve); color: var(--rose);
-  background: rgba(87,73,99,.15);
+  background: var(--card-bg1);
 }
 
 .source-list { display: flex; flex-direction: column; gap: .75rem; }
@@ -288,7 +285,7 @@ main {
 .callout {
   border-left: 2px solid var(--rose);
   padding: 1rem 1.4rem; margin: 1.5rem 0;
-  background: rgba(177,139,154,.06);
+  background: var(--card-bg1);
   border-radius: 0 6px 6px 0;
 }
 .callout p { font-size: .88rem; color: var(--dim); }
