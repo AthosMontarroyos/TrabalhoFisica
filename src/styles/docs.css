@@ -103,7 +103,7 @@ aside {
 .back-btn:hover { border-color: var(--rose); color: var(--blush); background: var(--card-bg1); }
 
 main {
-  padding: 3rem 5vw 5rem;
+  padding: calc(60px + 2rem) 5vw 5rem;
   max-width: 860px;
 }
 

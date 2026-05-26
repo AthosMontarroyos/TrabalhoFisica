@@ -19,7 +19,7 @@
     <main>
       <div class="page-header">
         <p class="eyebrow">TEMA 04 · GRUPO 4 · CBM</p>
-        <h1>Documentação<br>Técnica</h1>
+        <h1>Documentação</h1>
         <p>Especificações de linguagens, frameworks, arquitetura e referências bibliográficas utilizadas no desenvolvimento do projeto.</p>
       </div>
 
