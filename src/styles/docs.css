@@ -111,7 +111,7 @@ main {
 }
 
 .doc-section {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   scroll-margin-top: 2rem;
   animation: fadeUp .6s ease both;
 }
