@@ -208,7 +208,7 @@
             <div class="source-body">
               <div class="source-title">MIL-PRF-19500 — General Specification for Semiconductor Devices</div>
               <div class="source-meta">Defense Logistics Agency (DLA) · U.S. Department of Defense <span class="source-tag">Norma</span></div>
-              <div class="source-url">https://landandmaritimeapps.dla.mil/programs/milspec/</div>
+              <a class="source-url" href="https://landandmaritimeapps.dla.mil/programs/milspec/" target="_blank" rel="noopener noreferrer">https://landandmaritimeapps.dla.mil/programs/milspec/</a>
             </div>
           </div>
           <div class="source-card">
@@ -216,7 +216,7 @@
             <div class="source-body">
               <div class="source-title">AEC-Q100 Rev-H — Failure Mechanism Based Stress Test Qualification for Integrated Circuits</div>
               <div class="source-meta">Automotive Electronics Council (AEC) · 2014 <span class="source-tag">Norma</span></div>
-              <div class="source-url">https://www.aecouncil.com/AECDocuments.html</div>
+              <a class="source-url" href="https://www.aecouncil.com/AECDocuments.html" target="_blank" rel="noopener noreferrer">https://www.aecouncil.com/AECDocuments.html</a>
             </div>
           </div>
           <div class="source-card">
@@ -224,7 +224,7 @@
             <div class="source-body">
               <div class="source-title">AEC-Q101 Rev-D — Failure Mechanism Based Stress Test Qualification for Discrete Semiconductors</div>
               <div class="source-meta">Automotive Electronics Council (AEC) · 2015 <span class="source-tag">Norma</span></div>
-              <div class="source-url">https://www.aecouncil.com/AECDocuments.html</div>
+              <a class="source-url" href="https://www.aecouncil.com/AECDocuments.html" target="_blank" rel="noopener noreferrer">https://www.aecouncil.com/AECDocuments.html</a>
             </div>
           </div>
           <div class="source-card">
@@ -232,7 +232,7 @@
             <div class="source-body">
               <div class="source-title">IEC 60068 — Environmental Testing (Parts 1–3)</div>
               <div class="source-meta">International Electrotechnical Commission (IEC) <span class="source-tag">Norma</span></div>
-              <div class="source-url">https://webstore.iec.ch/publication/1037</div>
+              <a class="source-url" href="https://webstore.iec.ch/publication/1037" target="_blank" rel="noopener noreferrer">https://webstore.iec.ch/publication/1037</a>
             </div>
           </div>
           <div class="source-card">
@@ -240,7 +240,7 @@
             <div class="source-body">
               <div class="source-title">ISO 9001:2015 — Quality management systems — Requirements</div>
               <div class="source-meta">International Organization for Standardization (ISO) · 2015 <span class="source-tag">Norma</span></div>
-              <div class="source-url">https://www.iso.org/standard/62085.html</div>
+              <a class="source-url" href="https://www.iso.org/standard/62085.html" target="_blank" rel="noopener noreferrer">https://www.iso.org/standard/62085.html</a>
             </div>
           </div>
           <div class="source-card">
@@ -248,7 +248,7 @@
             <div class="source-body">
               <div class="source-title">IATF 16949:2016 — Quality Management System Requirements for Automotive Production</div>
               <div class="source-meta">International Automotive Task Force (IATF) · 2016 <span class="source-tag">Norma</span></div>
-              <div class="source-url">https://www.iatfglobaloversight.org</div>
+              <a class="source-url" href="https://www.iatfglobaloversight.org" target="_blank" rel="noopener noreferrer">https://www.iatfglobaloversight.org</a>
             </div>
           </div>
           <div class="source-card">
@@ -256,7 +256,7 @@
             <div class="source-body">
               <div class="source-title">ABNT NBR ISO 9001 — Sistemas de Gestão da Qualidade</div>
               <div class="source-meta">Associação Brasileira de Normas Técnicas (ABNT) <span class="source-tag">Norma BR</span></div>
-              <div class="source-url">https://www.abnt.org.br</div>
+              <a class="source-url" href="https://www.abnt.org.br" target="_blank" rel="noopener noreferrer">https://www.abnt.org.br</a>
             </div>
           </div>
           <div class="source-card">
@@ -264,7 +264,7 @@
             <div class="source-body">
               <div class="source-title">INMETRO — Certificação Compulsória de Produtos Eletroeletrônicos</div>
               <div class="source-meta">Instituto Nacional de Metrologia, Qualidade e Tecnologia (INMETRO) <span class="source-tag">Regulatório BR</span></div>
-              <div class="source-url">https://www.gov.br/inmetro/pt-br</div>
+              <a class="source-url" href="https://www.gov.br/inmetro/pt-br" target="_blank" rel="noopener noreferrer">https://www.gov.br/inmetro/pt-br</a>
             </div>
           </div>
           <div class="source-card">
@@ -272,7 +272,7 @@
             <div class="source-body">
               <div class="source-title">Reliability Engineering — Component Qualification Fundamentals</div>
               <div class="source-meta">Texas Instruments Application Report · SSZB007 <span class="source-tag">App Note</span></div>
-              <div class="source-url">https://www.ti.com/lit/an/sszb007/sszb007.pdf</div>
+              <a class="source-url" href="https://www.ti.com/lit/an/sszb007/sszb007.pdf" target="_blank" rel="noopener noreferrer">https://www.ti.com/lit/an/sszb007/sszb007.pdf</a>
             </div>
           </div>
           <div class="source-card">
@@ -280,7 +280,7 @@
             <div class="source-body">
               <div class="source-title">Cloudflare Pages Documentation</div>
               <div class="source-meta">Cloudflare, Inc. <span class="source-tag">Docs Técnicos</span></div>
-              <div class="source-url">https://developers.cloudflare.com/pages/</div>
+              <a class="source-url" href="https://developers.cloudflare.com/pages/" target="_blank" rel="noopener noreferrer">https://developers.cloudflare.com/pages/</a>
             </div>
           </div>
           <div class="source-card">
@@ -288,7 +288,7 @@
             <div class="source-body">
               <div class="source-title">Vue.js 3 Official Documentation</div>
               <div class="source-meta">Evan You et al. · vuejs.org <span class="source-tag">Docs Técnicos</span></div>
-              <div class="source-url">https://vuejs.org/guide/introduction.html</div>
+              <a class="source-url" href="https://vuejs.org/guide/introduction.html" target="_blank" rel="noopener noreferrer">https://vuejs.org/guide/introduction.html</a>
             </div>
           </div>
         </div>
