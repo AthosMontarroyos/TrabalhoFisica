@@ -8,8 +8,7 @@
     </h1>
     <p class="hero-sub">
       Normas internacionais que definem confiabilidade,
-      rastreabilidade e conformidade em componentes eletrônicos —
-      do laboratório à linha de produção.
+      rastreabilidade e conformidade em componentes eletrônicos.
     </p>
     <div class="hero-line">
       <div class="scroll-arrow"></div>

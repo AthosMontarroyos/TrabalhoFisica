@@ -3,7 +3,7 @@
     <aside>
       <div class="sidebar-brand">
         <div class="name">CBM — <strong>2026</strong></div>
-        <div class="year">DOCUMENTAÇÃO TÉCNICA</div>
+        <div class="year">DOCUMENTAÇÃO</div>
       </div>
 
       <span class="sidebar-section-title">Conteúdo</span>
@@ -46,15 +46,15 @@
       <section class="doc-section" id="stack">
         <div class="doc-section-header">
           <span class="doc-section-num">02</span>
-          <h2 class="doc-section-title">Stack Tecnológico</h2>
+          <h2 class="doc-section-title">Stack</h2>
         </div>
-        <p class="prose">Tecnologias utilizadas no protótipo atual e planejadas para a versão final.</p>
+        <p class="prose">Tecnologias utilizadas no projeto.</p>
 
         <p class="stack-subtitle">FRAMEWORKS & BIBLIOTECAS</p>
         <div class="stack-grid">
           <div class="stack-card">
             <div class="stack-card-top">
-              <span class="stack-icon">🟢</span>
+              <img class="stack-icon-img" :src="vueImg" alt="Vue">
               <span class="stack-badge badge-fw">FRAMEWORK</span>
             </div>
             <div class="stack-name">Vue.js 3</div>
@@ -63,7 +63,7 @@
           </div>
           <div class="stack-card">
             <div class="stack-card-top">
-              <span class="stack-icon">⚡</span>
+              <img class="stack-icon-img" :src="viteImg" alt="Vite">
               <span class="stack-badge badge-tool">BUILD TOOL</span>
             </div>
             <div class="stack-name">Vite</div>
@@ -72,7 +72,7 @@
           </div>
           <div class="stack-card">
             <div class="stack-card-top">
-              <span class="stack-icon">🌐</span>
+              <img class="stack-icon-img" :src="vueImg" alt="Vue Router">
               <span class="stack-badge badge-fw">ROTEAMENTO</span>
             </div>
             <div class="stack-name">Vue Router</div>
@@ -85,7 +85,7 @@
         <div class="stack-grid">
           <div class="stack-card">
             <div class="stack-card-top">
-              <span class="stack-icon">🟡</span>
+              <img class="stack-icon-img" :src="jsImg" alt="JavaScript">
               <span class="stack-badge badge-lang">LINGUAGEM</span>
             </div>
             <div class="stack-name">JavaScript (ES2022+)</div>
@@ -94,7 +94,7 @@
           </div>
           <div class="stack-card">
             <div class="stack-card-top">
-              <span class="stack-icon">🎨</span>
+              <img class="stack-icon-img" :src="cssImg" alt="CSS3">
               <span class="stack-badge badge-lang">ESTILO</span>
             </div>
             <div class="stack-name">CSS3</div>
@@ -103,7 +103,7 @@
           </div>
           <div class="stack-card">
             <div class="stack-card-top">
-              <span class="stack-icon">📄</span>
+              <img class="stack-icon-img" :src="htmlImg" alt="HTML5">
               <span class="stack-badge badge-lang">MARKUP</span>
             </div>
             <div class="stack-name">HTML5</div>
@@ -116,7 +116,7 @@
         <div class="stack-grid">
           <div class="stack-card">
             <div class="stack-card-top">
-              <span class="stack-icon">⬢</span>
+              <img class="stack-icon-img" :src="nodeImg" alt="Node.js">
               <span class="stack-badge badge-infra">RUNTIME</span>
             </div>
             <div class="stack-name">Node.js</div>
@@ -125,21 +125,12 @@
           </div>
           <div class="stack-card">
             <div class="stack-card-top">
-              <span class="stack-icon">☁️</span>
+              <img class="stack-icon-img" :src="cloudflareImg" alt="Cloudflare">
               <span class="stack-badge badge-infra">HOSPEDAGEM</span>
             </div>
             <div class="stack-name">Cloudflare Pages</div>
             <div class="stack-desc">Hospedagem do site estático com deploy contínuo via GitHub.</div>
             <div class="stack-version">Pages · CDN Global</div>
-          </div>
-          <div class="stack-card">
-            <div class="stack-card-top">
-              <span class="stack-icon">🐳</span>
-              <span class="stack-badge badge-infra">INFRA</span>
-            </div>
-            <div class="stack-name">Docker</div>
-            <div class="stack-desc">Conteinerização para padronizar o ambiente de desenvolvimento.</div>
-            <div class="stack-version">v25.x (opcional)</div>
           </div>
         </div>
 
@@ -339,6 +330,13 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import vueImg from '../assets/Stack/vue.png'
+import viteImg from '../assets/Stack/vite.png'
+import jsImg from '../assets/Stack/js.png'
+import cssImg from '../assets/Stack/css.png'
+import htmlImg from '../assets/Stack/html.png'
+import nodeImg from '../assets/Stack/nodejs.png'
+import cloudflareImg from '../assets/Stack/cloudflare.png'
 
 onMounted(() => {
   const sections = document.querySelectorAll('.doc-section')

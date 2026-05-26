@@ -21,7 +21,7 @@
         </svg>
       </span>
       <span class="docs-link-body">
-        <span class="docs-link-title">Documentação Técnica</span>
+        <span class="docs-link-title">Documentação</span>
         <span class="docs-link-sub">Linguagens · Frameworks · Fontes · Arquitetura do projeto</span>
       </span>
       <span class="docs-link-arrow">→</span>
