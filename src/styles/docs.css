@@ -11,7 +11,7 @@ aside {
   overflow-y: auto;
   border-right: 1px solid var(--border);
   padding: 2rem 1.25rem;
-  background: var(--card-bg2);
+  background: linear-gradient(180deg, var(--card-bg2) 0%, color-mix(in srgb, var(--card-bg2) 95%, var(--rose)) 100%);
   display: flex; flex-direction: column; gap: .25rem;
 }
 @media(max-width:768px){ aside { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border); } }
@@ -54,7 +54,7 @@ aside {
 .sidebar-link {
   display: flex; align-items: center; gap: .6rem;
   padding: .4rem .65rem;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   font-size: .82rem;
   color: var(--mauve2);
@@ -62,20 +62,13 @@ aside {
   position: relative;
 }
 .sidebar-link:hover {
-  background: var(--card-bg1);
+  background: rgba(255,255,255,.04);
   color: var(--blush);
 }
 .sidebar-link.active {
-  background: var(--card-bg1);
+  background: rgba(255,255,255,.06);
   color: var(--blush);
-}
-.sidebar-link.active::before {
-  content: '';
-  position: absolute; left: 0; top: 50%;
-  transform: translateY(-50%);
-  width: 3px; height: 18px;
-  background: var(--rose);
-  border-radius: 2px;
+  border-left: 2px solid var(--rose);
 }
 .sidebar-link .dot {
   width: 5px; height: 5px; border-radius: 50%;
@@ -100,36 +93,44 @@ aside {
   color: var(--mauve2);
   transition: all .25s;
 }
-.back-btn:hover { border-color: var(--rose); color: var(--blush); background: var(--card-bg1); }
+.back-btn:hover { border-color: var(--rose); color: var(--blush); background: rgba(255,255,255,.04); }
 
 main {
-  padding: calc(60px + 2rem) 5vw 5rem;
+  padding: calc(60px + 3rem) 5vw 5rem;
   max-width: 860px;
 }
 
 .page-header {
   margin-bottom: 3rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border);
+  padding-bottom: 0;
   position: relative;
 }
-.page-header::after {
+.page-header::before {
   content: '';
-  position: absolute; bottom: -1px; left: 0;
-  width: 60px; height: 2px;
-  background: linear-gradient(90deg, var(--rose), transparent);
+  position: absolute; top: -3rem; right: -5vw;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--rose) 8%, transparent) 0%, transparent 70%);
+  pointer-events: none;
 }
 .page-header .eyebrow {
   font-family: 'DM Mono', monospace;
   font-size: .6rem; letter-spacing: .35em;
   color: var(--rose); margin-bottom: .75rem;
   text-transform: uppercase;
+  opacity: .8;
 }
 .page-header h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-  font-weight: 300; line-height: 1.1;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 300; line-height: 1.05;
   color: var(--blush);
+}
+.page-header h1::after {
+  content: '';
+  display: block;
+  width: 50px; height: 2px;
+  background: linear-gradient(90deg, var(--rose), transparent);
+  margin-top: 1rem;
 }
 .page-header p {
   margin-top: .75rem; font-size: .9rem;
@@ -138,9 +139,17 @@ main {
 }
 
 .doc-section {
-  margin-bottom: .75rem;
-  scroll-margin-top: 2rem;
+  margin-bottom: 1rem;
+  scroll-margin-top: 80px;
   animation: fadeUp .6s ease both;
+  background: rgba(255,255,255,.02);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: border-color .3s;
+}
+.doc-section:hover {
+  border-color: color-mix(in srgb, var(--rose) 30%, var(--border));
 }
 .doc-section-header {
   display: flex; align-items: center; gap: .75rem;
@@ -157,11 +166,11 @@ main {
 .doc-section-num {
   font-family: 'DM Mono', monospace;
   font-size: .6rem; letter-spacing: .25em;
-  color: var(--mauve1);
-  background: var(--card-bg1);
+  color: var(--rose);
+  background: color-mix(in srgb, var(--rose) 10%, transparent);
   padding: .2rem .55rem;
   border-radius: 4px;
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in srgb, var(--rose) 20%, transparent);
 }
 .doc-section-title {
   font-family: 'Cormorant Garamond', serif;
@@ -178,13 +187,14 @@ main {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1.1rem 1.25rem;
-  background: var(--card-bg1);
+  background: rgba(255,255,255,.03);
+  backdrop-filter: blur(4px);
   transition: all .3s;
 }
 .stack-card:hover {
   border-color: var(--rose);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.06);
 }
 .stack-card-top {
   display: flex; align-items: center;
@@ -193,8 +203,9 @@ main {
 .stack-badge {
   font-family: 'DM Mono', monospace;
   font-size: .55rem; letter-spacing: .15em;
-  padding: .2rem .5rem; border-radius: 3px;
+  padding: .2rem .5rem; border-radius: 4px;
   border: 1px solid;
+  backdrop-filter: blur(2px);
 }
 .badge-fw  { color: #93C5FD; border-color: #93c5fd44; background: #93c5fd0d; }
 .badge-lang{ color: #6EE7B7; border-color: #6ee7b744; background: #6ee7b70d; }
@@ -203,14 +214,14 @@ main {
 .stack-icon-img {
   width: 44px; height: 44px;
   object-fit: contain;
-  background: var(--card-bg2);
+  background: rgba(255,255,255,.04);
   border-radius: 8px;
   padding: 7px;
   border: 1px solid var(--border);
   transition: all .25s;
 }
 .stack-card:hover .stack-icon-img {
-  background: var(--card-bg1);
+  background: rgba(255,255,255,.08);
   border-color: var(--rose);
 }
 .stack-name {
@@ -247,10 +258,11 @@ main {
   font-size: .58rem; letter-spacing: .25em;
   color: var(--mauve1); text-align: left;
   padding: .55rem 1rem .55rem 0;
+  font-weight: 400;
 }
 .role-table td {
   font-size: .85rem; color: var(--blush);
-  padding: .65rem 1rem .65rem 0;
+  padding: .7rem 1rem .7rem 0;
   border-bottom: 1px solid var(--border);
 }
 .role-table tr:last-child td { border-bottom: none; }
@@ -258,9 +270,9 @@ main {
 .role-chip {
   font-family: 'DM Mono', monospace;
   font-size: .55rem; letter-spacing: .12em;
-  padding: .15rem .45rem; border-radius: 3px;
+  padding: .15rem .45rem; border-radius: 4px;
   border: 1px solid var(--mauve1); color: var(--rose);
-  background: var(--card-bg1);
+  background: rgba(255,255,255,.04);
 }
 
 .source-list { display: flex; flex-direction: column; gap: .6rem; }
@@ -268,12 +280,13 @@ main {
   display: flex; align-items: flex-start; gap: .85rem;
   border: 1px solid var(--border); border-radius: 8px;
   padding: .9rem 1.1rem;
-  background: var(--card-bg1);
+  background: rgba(255,255,255,.02);
   transition: all .25s;
 }
 .source-card:hover {
   border-color: var(--rose);
-  transform: translateX(3px);
+  background: rgba(255,255,255,.04);
+  transform: translateX(4px);
 }
 .source-num {
   font-family: 'DM Mono', monospace;
@@ -312,8 +325,16 @@ main {
 .arch-box {
   border: 1px solid var(--border);
   border-radius: 10px; padding: 1.5rem;
-  background: var(--card-bg1);
-  font-family: 'DM Mono', monospace;
+  background: rgba(255,255,255,.02);
+  position: relative;
+  overflow: hidden;
+}
+.arch-box::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--rose), transparent);
+  opacity: .3;
 }
 .arch-layer {
   display: flex; align-items: center; gap: .85rem;
@@ -321,7 +342,9 @@ main {
   margin-bottom: .4rem;
   border: 1px solid;
   transition: all .25s;
+  position: relative;
 }
+.arch-layer:last-child { margin-bottom: 0; }
 .arch-layer:hover {
   transform: translateX(4px);
 }
@@ -329,7 +352,7 @@ main {
   font-size: .6rem; letter-spacing: .18em;
   min-width: 75px; text-transform: uppercase;
 }
-.arch-layer-content { font-size: .75rem; color: var(--blush); line-height: 1.4; }
+.arch-layer-content { font-size: .75rem; color: var(--blush); line-height: 1.4; font-family: 'Outfit', sans-serif; }
 .arch-layer.presentation { border-color: #93c5fd44; background: #93c5fd08; }
 .arch-layer.presentation .arch-layer-label { color: #93C5FD; }
 .arch-layer.state       { border-color: #c4b5fd44; background: #c4b5fd08; }
@@ -341,13 +364,14 @@ main {
 .arch-arrow {
   text-align: center; color: var(--mauve1);
   font-size: .7rem; margin: .1rem 0;
+  opacity: .6;
 }
 
 .callout {
-  border-left: 2px solid var(--rose);
+  border: 1px solid color-mix(in srgb, var(--rose) 25%, transparent);
   padding: .9rem 1.25rem; margin: 1.25rem 0;
-  background: var(--card-bg1);
-  border-radius: 0 8px 8px 0;
+  background: color-mix(in srgb, var(--rose) 6%, transparent);
+  border-radius: 8px;
 }
 .callout p { font-size: .85rem; color: var(--mauve2); line-height: 1.6; }
 .callout strong { color: var(--blush); }
