@@ -28,7 +28,7 @@ onBeforeUnmount(() => {
 #cursor {
   position: fixed;
   width: 10px; height: 10px;
-  background: var(--blush);
+  background: var(--cursor);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -36,5 +36,5 @@ onBeforeUnmount(() => {
   transition: width .2s, height .2s, background .2s;
   mix-blend-mode: difference;
 }
-#cursor.big { width: 36px; height: 36px; background: var(--rose); }
+#cursor.big { width: 36px; height: 36px; background: var(--cursor-big); }
 </style>

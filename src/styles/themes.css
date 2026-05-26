@@ -12,6 +12,8 @@
   --stat-bg1:   #1a2038;
   --stat-bg2:   #191224;
   --star-color: 255,224,230;
+  --cursor:     #A0C4FF;
+  --cursor-big: #7AA9E0;
 }
 :root[data-theme="sakura"] {
   --bg:         #1B0C1A;
@@ -27,6 +29,8 @@
   --stat-bg1:   #2a1325;
   --stat-bg2:   #1e0d1c;
   --star-color: 250,220,213;
+  --cursor:     #FADCD5;
+  --cursor-big: #6D3C52;
 }
 :root[data-theme="cafe"] {
   --bg:         #1a0f0a;
@@ -42,4 +46,6 @@
   --stat-bg1:   #2a1810;
   --stat-bg2:   #1e1008;
   --star-color: 215,204,200;
+  --cursor:     #D7CCC8;
+  --cursor-big: #8D6E63;
 }
